@@ -13,10 +13,10 @@ public class MainInventaris {
         mapInventaris.put("004", new Produk("004", "laptop", 20));
         mapInventaris.put("005", new Produk("005", "laptop", 20));
 
-        System.out.println("daftar produk awal");
+        System.out.println("DAFTAR PRODUK AWAL");
         tampilkanProduk(mapInventaris);
 
-        System.err.println("update stok");
+        System.err.println("UPADTE STOK PRODUK");
 
         Produk produkUpdate = mapInventaris.get("003");
 
