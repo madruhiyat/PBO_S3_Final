@@ -22,27 +22,22 @@ public class MainInventaris {
 
         if (produkUpdate != null) {
             produkUpdate.setStokProduk(25);
-            System.out.println("Stok Keyboard berhasil diubah menjadi "
-                    + produkUpdate.getStokProduk());
+            System.out.println("Stok Keyboard berhasil diubah menjadi " + produkUpdate.getStokProduk());
         }
 
-        // Menampilkan daftar setelah update
         System.out.println("DAFTAR SETELAH UPDATE");
         tampilkanProduk(mapInventaris);
 
-        // 5. Menghapus satu produk
         System.out.println("HAPUS PRODUK");
 
         String kodeHapus = "005";
 
         if (mapInventaris.remove(kodeHapus) != null) {
-            System.out.println("Produk " + kodeHapus
-                    + " berhasil dihapus.");
+            System.out.println("Produk " + kodeHapus + " berhasil dihapus.");
         } else {
             System.out.println("Produk tidak ditemukan.");
         }
 
-        // 6. Menampilkan daftar akhir
         System.out.println("DAFTAR PRODUK AKHIR");
         tampilkanProduk(mapInventaris);
     }
@@ -56,19 +51,14 @@ public class MainInventaris {
         for (String key : mapInventaris.keySet()) {
             Produk p = mapInventaris.get(key);
 
-            System.out.println(
-                    p.getIdProduk() + " | "
-                    + p.getNamaProduk() + " | Stok: "
-                    + p.getStokProduk()
+            System.out.println(p.getIdProduk() + " | " + p.getNamaProduk() + " | Stok: " + p.getStokProduk()
             );
 
             totalStok += p.getStokProduk();
         }
 
-        System.out.println("Jumlah jenis produk: "
-                + mapInventaris.size());
+        System.out.println("Jumlah jenis produk: " + mapInventaris.size());
 
-        System.out.println("Total seluruh stok: "
-                + totalStok);
+        System.out.println("Total seluruh stok: " + totalStok);
     }
 }
