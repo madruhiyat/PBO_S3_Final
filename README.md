@@ -50,8 +50,8 @@ Proyek ini dibuat untuk memahami penerapan OOP dan Java Collections dalam pengel
 
 ## Screenshots
 
-![App Screenshot](PBO_S3_Final1)
+![App Screenshot](PBO_S3_Final1.png)
 
-![App Screenshot](PBO_S3_Final2)
+![App Screenshot](PBO_S3_Final2.png)
 
-![App Screenshot](PBO_S3_Final3)
+![App Screenshot](PBO_S3_Final3.png)
